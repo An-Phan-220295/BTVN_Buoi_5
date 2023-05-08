@@ -171,6 +171,7 @@ public static void congTruNhanChia() {
 					}
 					int number = Integer.parseInt(temp);
 					sum += number;
+					System.out.println("Vui lòng nhập số tiếp theo: ");
 					temp = sc.nextLine();
 				} catch (Exception e) {
 					// TODO: handle exception
@@ -201,6 +202,7 @@ public static void congTruNhanChia() {
 					}
 					else
 						minus -= number;
+					System.out.println("Vui lòng nhập số tiếp theo: ");
 					temp = sc.nextLine();
 				} catch (Exception e) {
 					// TODO: handle exception
@@ -224,6 +226,7 @@ public static void congTruNhanChia() {
 					}
 					int number = Integer.parseInt(temp);
 					multiply *= number;
+					System.out.println("Vui lòng nhập số tiếp theo: ");
 					temp = sc.nextLine();
 				} catch (Exception e) {
 					// TODO: handle exception
@@ -255,6 +258,7 @@ public static void congTruNhanChia() {
 					}
 					else
 						divide /= number;
+					System.out.println("Vui lòng nhập số tiếp theo: ");
 					temp = sc.nextLine();
 				} catch (Exception e) {
 					// TODO: handle exception
