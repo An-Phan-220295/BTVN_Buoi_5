@@ -296,49 +296,28 @@ public static void sinhVienTreNhat() {
 		int by3 =inputIntegerNumber(0, 3000, "Vui lòng nhập năm sinh sinh viên thứ ba: ");
 		System.out.println();
 		
-		//Khối xử lý+ Đầu ra
-		if (by1>by2 && by1>by3) {
-			System.out.println(TEXT);
-			System.out.printf(TEXT_HOTEN_NAMSINH, name1,by1);
-		}
-
-		if (by2>by1 && by2>by3)
-		{
-			System.out.println(TEXT);
-			System.out.printf(TEXT_HOTEN_NAMSINH, name2,by2);
-		}
-		if (by3>by1 && by3>by2)
-		{
-			System.out.println(TEXT);
-			System.out.printf(TEXT_HOTEN_NAMSINH, name3,by3);
-		}
-		if (by1==by2 && by1>by3)
-		{
-			System.out.println(TEXT);
-			System.out.printf(TEXT_HOTEN_NAMSINH, name1,by1);
-			System.out.println();
-			System.out.printf(TEXT_HOTEN_NAMSINH, name2,by2);
-		}
-		if (by1==by3 && by1>by2)
-		{
-			System.out.println(TEXT);
-			System.out.printf(TEXT_HOTEN_NAMSINH, name1,by1);
-			System.out.println();
-			System.out.printf(TEXT_HOTEN_NAMSINH, name3,by3);
-		}
-		if (by2==by3 && by2>by1)
-		{
-			System.out.println(TEXT);
-			System.out.printf(TEXT_HOTEN_NAMSINH, name2,by3);
-			System.out.println();
-			System.out.printf(TEXT_HOTEN_NAMSINH, name3,by3);
-		}
-		if (by1==by2 && by2==by3)
-		{
-			System.out.println(TEXT);
-			System.out.printf("Cả 3 sinh viên tên: %s, %s, %s - Năm sinh: %d ",name1, name2, name3, by1);
-		}
+		//Khối xử lý
+		int tempBy = by1;
 		
+		if (by2 > tempBy)
+			tempBy = by2;
+		
+		if (by3 > tempBy)
+			tempBy = by3;
+		
+		////Khối đầu ra
+		System.out.println(TEXT);
+		if(by1 == tempBy) {
+			System.out.printf(TEXT_HOTEN_NAMSINH, name1,by1);
+			System.out.println();}
+		
+		if(by2 == tempBy) {
+			System.out.printf(TEXT_HOTEN_NAMSINH, name2,by2);
+			System.out.println();}
+		
+		if(by3 == tempBy) {
+			System.out.printf(TEXT_HOTEN_NAMSINH, name3,by3);
+			System.out.println();}
 	}
 
 public static void soChanLe() {
@@ -505,7 +484,6 @@ public static void sinhVienXaTruongNhat() {
 	double xT,yT;
 	double dA, dB, dC ; 
 	double max;
-	
 	
 	final String TEXT_NHAP_TOA_DO_X ="Vui lòng nhập tọa độ X: ";
 	final String TEXT_NHAP_TOA_DO_Y ="Vui lòng nhập tọa độ Y: ";
