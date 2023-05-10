@@ -164,11 +164,11 @@ public static void congTruNhanChia() {
 			temp = sc.nextLine();
 			while(!temp.isEmpty()) {
 				try {
-					if (temp.equals("0"))
-					{
-						System.out.println("Vui lòng nhập lại số khác 0.");
-						temp = sc.nextLine();
-					}
+// 					if (temp.equals("0"))
+// 					{
+// 						System.out.println("Vui lòng nhập lại số khác 0.");
+// 						temp = sc.nextLine();
+// 					}
 					int number = Integer.parseInt(temp);
 					sum += number;
 					System.out.println("Vui lòng nhập số tiếp theo: ");
@@ -190,11 +190,11 @@ public static void congTruNhanChia() {
 			boolean check = true;
 			while(!temp.isEmpty()) {
 				try {
-					if (temp.equals("0"))
-					{
-						System.out.println("Vui lòng nhập lại số khác 0.");
-						temp = sc.nextLine();
-					}
+// 					if (temp.equals("0"))
+// 					{
+// 						System.out.println("Vui lòng nhập lại số khác 0.");
+// 						temp = sc.nextLine();
+// 					}
 					int number = Integer.parseInt(temp);
 					if (check) {
 						minus = number;
@@ -219,11 +219,11 @@ public static void congTruNhanChia() {
 			temp = sc.nextLine();
 			while(!temp.isEmpty()) {
 				try {
-					if (temp.equals("0"))
-					{
-						System.out.println("Vui lòng nhập lại số khác 0.");
-						temp = sc.nextLine();
-					}
+// 					if (temp.equals("0"))
+// 					{
+// 						System.out.println("Vui lòng nhập lại số khác 0.");
+// 						temp = sc.nextLine();
+// 					}
 					int number = Integer.parseInt(temp);
 					multiply *= number;
 					System.out.println("Vui lòng nhập số tiếp theo: ");
@@ -246,7 +246,7 @@ public static void congTruNhanChia() {
 			boolean check1 = true;
 			while(!temp.isEmpty()) {
 				try {
-					if (temp.equals("0"))
+					if (temp.equals("0") && check1 == false)
 					{
 						System.out.println("Vui lòng nhập lại số khác 0.");
 						temp = sc.nextLine();
